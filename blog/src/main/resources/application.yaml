@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1/blog?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 1234
+
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+
+api-package: com.autwind.blog.api
+
+server:
+  port: 5000
